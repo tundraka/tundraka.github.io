@@ -5,7 +5,7 @@ layout: post
 
 My page
 =======
-This is an example of markdown
+This is an example of markdown. [This](test.md) is a link to another example page.
 
 ```
 git clone git@github.com:tundraka/tundraka.github.io.git
