@@ -20,6 +20,7 @@ Themes of this week:
   them together to other bits of information.
 
 ##How to form a chunk
+
 ###Part 1
 - Best chunk are those that we don't need to conscuiouly think about connecting
   the neuro path together.
@@ -59,25 +60,26 @@ understood.
 - 3:49 - Understanding something, doesn't mean you can actually doit.
 
 3. Gaining context, not only how but when to use this chunk.
-- Going beyond the initial problem
-- repeating and practicing with both related and unrelated problems
-- practice helps you broaden the networks of neurons that are connected to the
+ - Going beyond the initial problem
+ - repeating and practicing with both related and unrelated problems
+ - practice helps you broaden the networks of neurons that are connected to the
   chunk, ensuring it's not only firm, but also accessible from many different
 paths
-- Learning takes place in two ways
- - bottom up: practice and repetition can help you build and strengthen each
+ - Learning takes place in two ways
+  - bottom up: practice and repetition can help you build and strengthen each
    chunk
- - top down: big picture process, what you're learning and where it fits in.
- - Both processes are important in gaining mastery over what we're learning.
-- Context is where bottom up and top down learning meet. WHen to use a techique
+  - top down: big picture process, what you're learning and where it fits in.
+  - Both processes are important in gaining mastery over what we're learning.
+ - Context is where bottom up and top down learning meet. WHen to use a techique
   as opposed to other
-- A *picture walk* (looking at picture, section headings, can help get a big
+ - A *picture walk* (looking at picture, section headings, can help get a big
   picture of the material
- - Helps to see where to put the chunks that you're learning. How they related
+  - Helps to see where to put the chunks that you're learning. How they related
    to each other
- - Leanr the major concepts or points first. Once that's clear fill in the
+  - Leanr the major concepts or points first. Once that's clear fill in the
    details. Even though you'll miss some details, you can still see the big
-picture.
+   picture.
+
 Chunks are best build with
 - Focused attention
 - Understandint (of the main idea)
