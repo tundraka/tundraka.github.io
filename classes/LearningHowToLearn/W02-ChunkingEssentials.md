@@ -82,7 +82,57 @@ distracted while trying to learn.
 
 ####Chunks are best build with
 - Focused attention
-- Understandint (of the main idea)
+- Understanding (of the main idea)
 - Practice
 
+#Illusions of competence
+- The imporatnce of recall
+- Illusions of competence
+- Mini-testing
+- The value of making mistakes
 
+###Recall
+*Recall* is an exercise to help learn material from a book, it's more productive
+that re-reading, and concept maps. Look away from the material and see what you can
+recall.
+The retrieval process enhances deep learning and helps up to begin forming
+chunks.
+Building connection between chunks before the basic chunks are embeded in the
+brain doesn't work that well; like trying to lear advance strategy in chess
+without learning how the pieces move.
+The only time where re-reading is better is when you space re-reading, more
+along the lines of spaced repetition.
+When you're first trying to learn how to understand a concept or techinque, you
+entire working memory is involved in the process all tangled. As we begin to
+chun the concept, we feel like connections are smooth in your mind. Once it's
+chunked, it takes one slot in working memory, it becomes one strand that is
+easy to follow and to make new connections, the rest of the working memory
+remains free. In this way, it increases the amount of information available to
+your working memory, like a link to a place where greater knowledge is stored.
+
+###Illusions of competence
+Once of the most common *illusions of competence* is glancing at a solution and
+thinking that you understand the material. We must have the information
+persisting in our memory to master the material well enough to do well in test and
+to think creatively with it.
+
+Highlighting and underlinding, can be innefective and missleading, making
+movement with your hand might fool you into thinking that you've places the
+concept in your brain. Try to look for main ideas and try to keep underlining
+and highlighting to a minimum.
+
+On the other hand side notes on a margin that synthesize ideas is a good idea.
+Looks like when we open a book it gives the illusion that the information is in
+our brain. Because it can be easier to look into the book instead of recalling
+we remainin our illusion that we have the knowledge. Having the material and
+spending a lot of time with it doesn't guarantee that we learn it.
+
+***Testing*** is a way to make sure that we learnt the material. Recall is
+actually doing the same. Allowing you to see if you really grasp an idea.
+***Mistakes in testing*** helps you detect flaws in your thinking and to correct it.
+
+Recalling material when you're out of your outside of you usual place of
+studing. When you're learning something new, you can take subliminal cues from
+the space surrounding you at the moment when learning. Recalling and rethinking
+when outside of our usual env, you become independent of the cues of the place
+where you learn the material.
