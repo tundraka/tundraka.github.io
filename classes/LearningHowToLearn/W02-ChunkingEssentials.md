@@ -95,13 +95,17 @@ distracted while trying to learn.
 *Recall* is an exercise to help learn material from a book, it's more productive
 that re-reading, and concept maps. Look away from the material and see what you can
 recall.
+
 The retrieval process enhances deep learning and helps up to begin forming
 chunks.
+
 Building connection between chunks before the basic chunks are embeded in the
 brain doesn't work that well; like trying to lear advance strategy in chess
 without learning how the pieces move.
+
 The only time where re-reading is better is when you space re-reading, more
 along the lines of spaced repetition.
+
 When you're first trying to learn how to understand a concept or techinque, you
 entire working memory is involved in the process all tangled. As we begin to
 chun the concept, we feel like connections are smooth in your mind. Once it's
@@ -136,3 +140,66 @@ studing. When you're learning something new, you can take subliminal cues from
 the space surrounding you at the moment when learning. Recalling and rethinking
 when outside of our usual env, you become independent of the cues of the place
 where you learn the material.
+
+#What motivates you
+Most of the neurons in our cortex carry information about what's happening
+around and what we're doing. There's also a diffusely projecting system of
+neuromodulators that carry information not about the content of an experience
+but its importance and value to your future.
+
+Neuromodulators are chemicals that influence how neurons respond to other neurons.
+They have a profound impact on your unconscious mind.
+- Acetylcholine
+- Dopamine
+- Serotonin
+
+##Acetylcholine
+- Created by acetylcholine neurons 
+- Important for focused learning.
+- Project widely and activate circuits that control synaptic plasticity.
+  Leading to new long term memory
+
+##Dopamine
+- Motivation is controlled by dopamine
+- Is release from the neuron when we receive an unexpected reward.
+- Found in a small set of neurons in our brain stem
+- Predicting future rewards and not only the immediate reward.
+- Help motivates to do something that may not be rewarding right now but will
+  be in the future.
+- Have a very powerful effect on learning, also affects decision making.
+- Part of a large brain system that control reward learning
+- Located in the basal ganglia above the dopamine neurons and below the cortex of
+  the brain
+- Artificial drugs artificially increase dopamine activity, fool the brain into
+  thinking that something wonderful has just happened.
+ - Leads to craving and dependence which can hijack your free will and motivate
+   action that are harmful to ourself.
+- Loss of dopamine neurons leads to lack of motivation, and something called
+  anhedonia.
+ - anhedonia. is the loss of interest in things that once gave you pleasure.
+- Severe loss of dopamine neurons cuases resting tremor, slowness, rigiditiy
+  (Parkinson disease). Lead to catatonia.
+- Part of the unconsious part of the brain.
+
+##Serotonin
+- Strongly affects your social life
+ - In monkey groups the alpha male has the higher levels of serotonin
+ - The omega has the lowest levels of serotonin
+- Prozac raises the levels of serotonin
+- Serotonin is like to risk taking, less serotonine greater risk taking.
+- Inmates in jail for violent crimes have some of the lowest levels of
+  serotonin in society
+
+##Emotions
+- Strongly affect learning.
+- Emotions were once thought to be separate from cognition
+- Emotions are intertwined with perception and attention and interact with
+  learning and memory.
+- The amigdala in one of the major center where cognition and emotion are
+  effectively integrated.
+ - Part of the lymbic system.
+ - Together with hippocampus is involved in processing memory and decision making as
+   well as regulating emotional reactions.
+ - Happy amigdala, happy learner.
+- The emotions and your neuromodulatory systems are slower than perception and
+  action, but are no less importan for successful learning.
