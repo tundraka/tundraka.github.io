@@ -203,3 +203,90 @@ They have a profound impact on your unconscious mind.
  - Happy amigdala, happy learner.
 - The emotions and your neuromodulatory systems are slower than perception and
   action, but are no less importan for successful learning.
+
+#The value of a library of chunks
+- Compaction
+- Transfer
+- Creativity
+- Law of serendipity
+
+##Compaction, transfer
+- To enhance their knowledge and epertise is to gradually build the number of
+  chunks in their mind. Valuable bits of information that we can link in new
+and creative ways.
+- *Transfer* chunk concepts that you learn in physics can be very similar to
+  chunk concepts in business
+- Chunk: compress information. Compavtion.
+- As we gain more experience in chunking, we'll be able to create bigger
+  chunks, in some sense the neural patterns are longer and solid.
+- We can skip to the right solution while in diffuse mode. Two or more chunks
+  can be connected while in diffuse mode.
+- As we build chunks fills a part of the larger picture, without practice
+  chunks can fade making it difficult to see the big picture.
+
+##Creativity
+Two ways of figuring something out
+- sequential step by step reasoning
+ - Each small step leads to the solution, involves the focused mode.
+- holistic: intuition, creative diffuse mode linking of several seamingly
+  different focus mode thoughts. Most difficult problems and concepts are
+grasps through intuition because these new ideas make a leap away from what
+you're familiar with.
+- The diffuse mode, semi-random way of making connection, should be carefully
+  verified using the focus mode, intuitive insights are not always corect
+
+##Law of serendipity
+It could be the case that there are many problems or concepts or in whatever
+chapter/section you're studying.
+
+*Law of serendipity*: Lady Luck favors the one who tries.
+
+Focus on whatever section, once that problem is in our mental library, the 2nd
+would go easier and the 3rd even more.
+
+#Overlearning, choking, einstellung and iterleaving
+- When learning something, we tend to practice over and over again on the same
+  study session
+- *Overlearning* is when you continue to practice something that you already
+  master.
+- Help increase automaticity. Can be helpful in times of nervousness, for
+  example practicing for a talk.
+- Can be a waste of valuable learning time.
+- Once we master something, continuing to practice on the same session doesn't
+  increase long term memory retention.
+- Focusing on one technique is like learning carpentry by only practicing with
+  a hammer, it may be the case that we want to do everything with a hammer.
+- Promotes illusion of competence, practicing something that we already master
+  is easy. We only mastered the easy stuff.
+
+##Deliverate practice
+- We want to balance our studies by deliveratively focusing on what we found
+  more difficult. This is *deliverate practice*.
+
+##Einstellung
+- We can translate Einstellung as mindset.
+- Your initial thought may prevent a better idea or solution to be found.
+- your initial intuition about what's happening or what you need to be doing is
+  missleading.
+- We need to unlearn our erroneous older ideas when learning new ones.
+- Blovked thought due to their preceding trainig.
+
+##Interleaving
+- Sometime we want to jump into the water without learning to swim.
+- We blindly start working on homework before reading the material, attending
+  lecture, etc.
+- Like start solving a problem without thinking where the solution really lies.
+- UNderstanding how to attain real solution is important in lifes.
+- Once we have chunks we need to know how to select and use different chunks
+- *Interleaving*: Jumping back and forth between problems or situation that
+  require different techniques or strategies.
+- Once the basic idea of a technique, start interleaving the practice with
+  problems of different types, approaches, concepts or procedures.
+- In science and math, it helps to look ahead of problems that are in the end
+  of the chapter.
+- You want your brain to get used to the idea that just knowing how to use
+  a concept/approach isn't enought we also need to use when to use it.
+- Starts building flexibilty and creative, where we leave the world or practice
+  and repetition and begin thinking more independently.
+- If you develop expertise in only one topic, you may know if very deeply but
+  you make become more deeply entrenched and not able to handle new ideas.
