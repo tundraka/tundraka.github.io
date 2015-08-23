@@ -86,6 +86,12 @@ arguments. The accepted params are:
 
 ##tapply
 
+##with
+Interesting use of `with` with the `*apply` functions.
+```R
+with(someSet, tapply(field1, fiels2, mean))
+```
+
 #Debugging Tools
 
 ##Diagnosing the problem
