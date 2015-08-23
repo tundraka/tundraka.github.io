@@ -83,3 +83,86 @@ This function are *much faster*, but only noticeable with big matrices.
 ##mapply
 Is a multivariate apply, which applies a function un parallel over a set of
 arguments. The accepted params are:
+
+##tapply
+
+#Debugging Tools
+
+##Diagnosing the problem
+- `message`: a generi notification/diagnostic, execution of the function
+  continues, this sounds like a `log.info`
+- `warning`: let the function execut and then display the warning, indicates
+  that there's something wrong but not fatal. The warning appear when the
+function returns.
+- `error`: A fatal problem has occured, execution of the function stops by the
+  `stop` function.
+- `condition`: a generic concept indicating that something unexpected can
+  occur, programmers can create their own `condition`s. This is like
+a precondition or an asserts (?).
+
+For example a `warn` message, notice that it's displayed after the function
+finishes.
+
+```R
+log(-1)
+#with the result.
+[1] NaN
+Warning message:
+In log(-1) : NaNs produced
+```
+
+`invisible` prevents autoprinting. For example the following two functions
+will return the same object, but one of them won't print the value of the
+returned value because it's using `invisible`.
+
+```R
+x <- function(p) p
+y <- function(p) invisible(p)
+
+x(2) # aside from returning 2 will print the 2
+y(2) # will return 2 but won't print it.
+```
+
+One thing to notice in the following example is that the `print` function will
+return the string that it prints, notice how we also used the function
+`invisible` to avoid this.
+
+```R
+x <- function(p) {
+    print(cat('function executed ', p)) #bad example.
+    invisible(p)
+}
+```
+
+##Basic Tools
+These are good tools, but in general we can debug wihtout using them, here
+there are to know about them. They allow you to peak in your code, instead of
+having print statements in the code.
+- `traceback`: prints the call stack after the error occurs. Does nothign if
+  nothing err's. Will display a stack trace with all the function called in
+before getting to an error state.
+- `debug`: flags a function for debug mode. everything you execute that
+  function, it'll suspend the execution of the function at the first line.
+- `browse`: suspends the execution of the function wherever it's called and
+  then sets the function in `debug` mode.
+- `trace`: inserts debugging code into a function without editing the function.
+  Useful when debugging someone else code.
+- `recover`: related to `trace`, this is an error handler, allows you to modify the
+  error behavior, so you can `browse` the function call stack. The normal
+behavior is to get an error, function stops and then we get to the console prompt.
+This function allows you to change that.
+
+```R
+lm(y - x) # this will cause an error
+traceback() # will print the functions called.
+
+debug(lm)
+lm(y - x)
+#prints the lm function body
+Browser[2]> # this is the browser console.
+
+options(error = recover)
+# error happens we get a menu to see what we'll do with the error.
+```
+
+Debugging tools are not a substitue for thinking.
