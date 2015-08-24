@@ -85,10 +85,19 @@ Is a multivariate apply, which applies a function un parallel over a set of
 arguments. The accepted params are:
 
 ##tapply
+Apply a function over a subset of a vector. The list of parameters is:
+- a vector
+- `INDEX`: Another vector of the same length.
+- `FUN`: the function to apply.
+- `...` other arguments for `FUN`
+- simplify: T default, similar to `sapply`
+
+##split
 
 ##with
 Interesting use of `with` with the `*apply` functions.
 ```R
+tapply(someSet$field1 someSet$field2, mean)
 with(someSet, tapply(field1, fiels2, mean))
 ```
 

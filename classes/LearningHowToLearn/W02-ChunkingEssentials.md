@@ -290,3 +290,26 @@ would go easier and the 3rd even more.
   and repetition and begin thinking more independently.
 - If you develop expertise in only one topic, you may know if very deeply but
   you make become more deeply entrenched and not able to handle new ideas.
+
+#Optional interviews
+
+##Norman Fortenberry - Learning at MIT
+- In engineering you're part of a team
+- Make sure that you find a team and the team members are serious about their
+  studies.
+- Just by joining a top level institution, you didn't become less smart. Need
+  to build a community of support.
+
+## Scott Young - a "Marco Polo" of Learning
+- About self explanation.
+ - Once a topic has been studied, write about it as if you were explaining it.
+ - You'll normally find that there are point where there's some "friction", too
+   vague, not very precisse, that indicates points where you've missed and need
+to be reviewed.
+- Richard Feynman's : the first rule is not to fool yourself, but you're the
+  easiest person to fool.
+- Always have a mission.
+- Explore MIT open courseware
+
+## Amy Alkon
+- Again, writing things as a way to engrain things in your brain.
