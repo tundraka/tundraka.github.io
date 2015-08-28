@@ -130,10 +130,83 @@ sample(1:10) # gives me a another permutation
 sample(1:10, replace = T) # repeated number of 1-10
 ```
 
-##Summary
+###Summary
 - Draw random samples from probability distributions  with r\* functions.
 - Std distributions are build in: Normal, Poison, Binomial, Exponential, Gamma,
   etc.
 - The `sample` function can be use to draw random samples from arbitrary
   vectors.
 - Setting the random number generator seed is important for reproducibility.
+
+#Profiling
+
+##Profiling R code
+- The profiler can help you figure out why some R code is taking so long. And
+  suggest strategies to fixing your code.
+- Profiling is a systematic way to examine how much time is spent in different
+  parts of the program 
+- Profiling is better than guessing 
+- Getting the biggest impact on speeding up code depends on knowing where the
+  code spends most of the time. This cannot be done without performance
+analysis and profiling.
+
+> We should forget about small efficiencies, say about 97% of the time:
+> premature optimization is the root of all evil. - Donald Knuth.
+
+- Design first, optimization second
+- Measure (collect data), don't guess
+
+###Using `system.time`
+- Measures the amount of time to evaluate an R expression, can accept blocks of
+  code (`{}`)
+- Computes the time in seconds. Error codition gets reported 
+- Return an object of class `proc_time`
+ - user time: time charged to the CPU for this expression
+ - elapsed time: *wall clock* time
+- Usually both times are very close
+- Elapsed time can be greater than the user time if the computer spends a lot
+  of time waiting.
+- Elapsed time may be smaller than the user time if the machine has multiple
+  cores, the basic R program doesn't use multiple cores
+ - There are libraries however that are able to use multiple core, like the
+   linear algebra libraries. 
+ - Parallel processing with the `parallel` package.
+
+```R
+# Elapsed time is > than user time because the time spent in my program, in
+# this case, just reading the content of the page is almost nothing. Most of the
+# time is spent waiting for the content to be available.
+system.time(readLines("http://www.jhsph.edu"))
+#   user  system elapsed 
+#  0.007   0.005   2.338 
+
+# Elapsed time is < than user time. In this case, looks like the code is run
+# in two different cores, making the elapsed time less because it's the amount
+# of time spent in each core.
+hilbert <- function(n) {
+    i <- 1:n
+    1 / outer(i - 1, i, "+")
+}
+x <- hilbert(1000)
+system.time(svd(x))
+
+# Not in my mac
+#   user  system elapsed 
+#  3.957   0.031   4.101 
+
+# Expression can be wrapped in {}
+system.time({
+    n <- 1000
+    r <- numeric(n)
+    for (i in 1:n) {
+        x <- rnorm(n)
+        r[i] <- mean(x)
+    }
+})
+
+#   user  system elapsed 
+#  0.128   0.004   0.132 
+```
+
+- handy function to profile blocks of code and see if they take a lot of time.
+- `system.time` assumes that you know where to look
