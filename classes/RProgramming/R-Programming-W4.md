@@ -210,3 +210,26 @@ system.time({
 
 - handy function to profile blocks of code and see if they take a lot of time.
 - `system.time` assumes that you know where to look
+
+##Usirn `Rprof`
+- R must be compiled with `Rprof` support
+- starts the profiler in R
+- `summaryRprof` takes the output from `Rprof` and summarizes it, `Rprof`
+  output is not very readable.
+- **Don't combine** `system.time` and `Rprof`
+- If your code runs very quickly `Rprof` won't be very useful, but probably you
+  won't need it.
+- `Rprof` keeps track of the call stack and samples at certain intervals and
+  keeps track of how much time is spent in each function.
+- Samples at the rate of 0.02 by default.
+- `summaryRprof` tabulates the output of `Rprof` and calcultes how much time is
+  spent in each function.
+- There are two methods for normalizing the data.
+ - `by.total` divides the time spent in each function by the total run time
+ - `by.self` first substracts out time spent in function above the call stack.
+ - `by.self` tells you how much time is spent in a given function after taking
+   out all the time spent in lower level functions.
+- `sample.interval` polling time default 0.02
+- `sampling.time` total amount of time that the expression run, similar to
+  `system.time` function
+- C or Fortran code is not profiled.
