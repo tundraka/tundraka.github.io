@@ -77,5 +77,57 @@ Whenever a distraction arises, just let if flow by. Also, setting yourself to
 reduce distraction is a good idea.
 
 ###Harnessing your zombies to help you
+- We will want to overwrite part of out habits and develop a few new ones, as
+  opposed to a complete change in them
+- The trick to overwriting a habits is to look at change our reaction to a cue.
+- Will power is used to change the reaction to the cue.
+
+**The cue**: recognized what lanches you into the procrastination mode. Cues
+  usually fall into one of the 4 categories.
+ - location
+ - time
+ - how you feel
+ - reaction either to other people or to something that just happened.
+- The issue with procrastination is that because it's an automatic habit, your
+  normally unaware that you're procrastinating.
+
+**The routine**
+- Instead of doing my studies I go to do something less painful.
+- The brain wants to go into this routine when we got the cue.
+ - This is when we need to actively rewiring the old habit.
+- To develope a *plan* is the way to rewiring. Creating a new ritual can be
+  helpful.
+
+**The reward**
+- May require a little bit of investigation.
+ - Why am I procrastinating?
+ - Can we substitute an emotion payoff, a sense of satisfaction, win a small
+   internal bet about something you turned into?
+- Habits are powerful because they *create neurological craving*
+- Only once your brain starts expecting that reward will the importan rewiring
+  take place that will allow you to create new habits.
+- Sometimes having a reward at specific time, like having lunch with a friend,
+  stoping work at 5pm, gives a solid mini deadline that can help spur work.
+- The better you get a something the more enjoyable it can become.
+
+**The belief**
+The most important part of changing the procrastination habit is to belief that
+you can do it. You may find out that when the going gets stressful, you long to
+fall back inot old, more comfortable habits. What can get you go through is the
+belief that the new system works.
 
 ##Memory
+- 
+
+###Juggling life and learning.
+- A complex balance of different task
+- Write a week list of key task in a journal
+ - Each day on another page list the tasks that you can reasonably work on.
+ - Write this *to-do* list the evening before.
+ - Why the event before?
+  - Research has shown that this helps your subconscious assimilate the tasks
+    on the list so yuou can figure out how to accomplish them
+ - If you don't write your task down they lurk at the edge of the four slots of
+   your working memory taking some mental real state.
+ - Include difuse mode tasks?
+- Makes

@@ -211,7 +211,7 @@ system.time({
 - handy function to profile blocks of code and see if they take a lot of time.
 - `system.time` assumes that you know where to look
 
-##Usirn `Rprof`
+##Using `Rprof`
 - R must be compiled with `Rprof` support
 - starts the profiler in R
 - `summaryRprof` takes the output from `Rprof` and summarizes it, `Rprof`
