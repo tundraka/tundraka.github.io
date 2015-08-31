@@ -23,7 +23,7 @@ takes time.
  - Devise irrational excuses that sound reasonable, for example: If I study to
    far ahead of the test I'll forget the material
 
-###Zombies Everywhere
+###Zombies Everywhere (Habits)
 - Before chunking, we would be spending a lot of resources, for example, when
   driving a bike for the first time, we would be paying a lot of attention so
 we don't fall off the bike.
@@ -31,7 +31,9 @@ we don't fall off the bike.
   an easy activity that may become automatic (zombie mode).
 - Chunking is related to habit, habit is an energy saver, allow us to free our
   mind for other types of activities
-We can think of habits havin four parts
+
+We can think of habits havin four parts:
+
 1. the cue - the trigger that launches you into zombie mode, for example:
  - seeing the first item in your todo list.
  - seeing a text message from
@@ -116,18 +118,149 @@ you can do it. You may find out that when the going gets stressful, you long to
 fall back inot old, more comfortable habits. What can get you go through is the
 belief that the new system works.
 
-##Memory
-- 
-
 ###Juggling life and learning.
-- A complex balance of different task
-- Write a week list of key task in a journal
+- A complex balance of different tasks
+- Write a week list of key tasks in a journal
  - Each day on another page list the tasks that you can reasonably work on.
  - Write this *to-do* list the evening before.
- - Why the event before?
+ - Why the evening before?
   - Research has shown that this helps your subconscious assimilate the tasks
-    on the list so yuou can figure out how to accomplish them
+    on the list so you can figure out how to accomplish them
  - If you don't write your task down they lurk at the edge of the four slots of
    your working memory taking some mental real state.
  - Include difuse mode tasks?
-- Makes
+- Make notes of what works and what doesn't
+ - Planning your quiting time is as important as your working time
+- Those who are committed to maintaining healthy leisure time along with their
+  hard work, outperform those who pursue an endless treadmil.
+- Eat your frogs first everyday.
+
+###Summing up procrastination
+- Keep a planner journal
+- Commit yourself to certain routines and tasks each day
+- Delay rewards until you finish the task
+- Watch for procrastination cues.
+- Gain trust in your new system
+- have backup plans for when you procrastinate
+- Eat your frogs fist.
+
+#Memory
+
+##Diving deeper into memory
+- Visual representation of what we are learning
+- Repeating what we learn, and over a period of time
+- Saying things out loud so auditory hooks get activated
+- Use card to help review what we need to learn.
+ - Interleave by micing them
+ - Repeatition/Testing by trying to remember what's on the other side.
+ - Once mastered, put them away
+ - Bring them back probably before going to sleep.
+
+- We have visual and spatial memory system that help form part of out long term
+  memory (LTM)
+- When we look into a house we've never seen, we can walk around and know where
+  things are how they look etc. Even after a long period of tiem we can still
+remember how they look and where they are.
+- We can enhance our ability to remember if we make user of those naturally
+  supersized visual, spatial memorization abilities.
+- This is probably because of the way our ancestor needed to remember where
+  things were and how to get there.
+- Images are important to memory is because images connect to the right brain's
+  visual spacial centers
+ - The image helps encapsultes seemingly dull and hard to remember concept by
+   using visual areas with ehanced memory abilities.
+- The more neural hooks you can build by evoking the senses the easier it'll be
+  to remember the concept and what it means.
+ - For example in remember f = ma,  f could stand for flying, m for mule, etc.
+   We can even enhance this visual representation by imaging the air that the
+mule hears and the smell of the mule, or the pressure of the air in the hair of
+the mule.
+- This is to put somthing into memory, what about the retrieval?
+ - The visual reprenstation should be memorrable
+ - It must be repeated.
+ - Otherwise the metabolic vampires will take that memory away.
+
+###What is long term memory (LTM)
+- Hippocampus. Important part of a brain system for learning and memory facts
+  and events.
+- Without the hippocampus and its inputs, it's not possible to store new
+  memories in the cortex, a process call *memory consolidation* that can take many
+  years
+- Memories are not fixed, but living, breathing part of the brain that are
+  changing all of the time.
+- Whenever you recall a memory it changes, a process called reconsolidation
+- Easy to implant false memories simply by suggesting, imagining, specially in
+  children who have vivid imaginations.
+
+
+```
+                    Consolidation
+     +-----------------------------------------+
+     |                                         v
+    STM                                       LTM
+Short Term Memory                       Long Term Memory
+                    Reconsolidation
+Active State ---------------------------> Inactive State
+   AS                                          IS
+    ^                                           |
+    +-------------------------------------------+
+                     Reactivation
+```
+
+- The *consolidation* process takes the brain state in STM and puts it in LTM, by
+  modifying synapses on the dendrites of neurons
+- LTM can remain dormant for a long time, untile the memory is *retrieve* to
+  STM
+- The new *reinstated* memory is in a new context which can be transferred to
+  LTM, altering the old memory through reconsolidation.
+- As we learn new things old memories also change.
+- Like consolidation, reconsolidation also occurs while sleeping.
+ - This is why learning over time is better than learning all at once.
+ - If you learn something over 1hr, you'll retain it better if you spent 10m
+   every month over a semester.
+
+- Aside from neurons, the brain have support cells called *glial cells*
+- The *astrocyte* is the most abundant glial cell in the human brain
+ - provide nutrients to the neurons.
+ - maintain extra cellular ion balance.
+ - Are involved in repair following an injury
+ - may have an important role in learning.
+ - Einstein brain have many more astrocytes than the average.
+
+###Creating Meaningful Groups and the Memory Palace Technique
+- Memory palace technique: is a way of grouping things that you want to
+  remember
+- Involves calling to mind a familiar place 
+- Useful for remembering unrelated items, such as a grocery list.
+- Imaging research on how people become experts, shows that such memory tools
+  speed up the acquisition of both chunks and big picture templates.
+- Memory tricks allow people to expand their working memory with easy access to
+  long term memory
+- The memory process itself becomes an exercise in creativity
+- The more you memorize using this techniques, the more creative you become.
+- As you begine to internalize key aspects of the material, taking a little
+  time to commit the most important points to memory, you come to understand
+them more deeply.
+
+
+###Suming up Memory
+- LTM: like a storage warehouse
+ - Practice and repeat to retrieve easily.
+ - Diffuse learning help build LTM
+- STM: Working memory
+ - 4 items/slots
+ - Understood ideas are compacted and occupy 1 item
+- We have outstanding visual/spatial memory
+ - Making use of those will help improve memory
+- Make a visual representation representing one key item you want to remember
+ - try to feel
+ - hear
+ - smeel
+ - The more funny/evocative, the better
+- Create meaningful groups that simplify the material
+ - Associate number with years
+ - systems you're familiar with (like running times)
+- Make a memorable sentense where each first letter is an item of a list that
+  is grouped together, like trying to memorize the parts of a skull.
+- Use familiar places to place ideas or concepts to allow you to remember those
+  items.
