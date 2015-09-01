@@ -4,14 +4,13 @@ rankhospital <- function(state, outcome, num) {
     hospitalColumn <- 2
     outcomeColumn <- outcomeList[[outcome]]
 
-    columnsOfInterest <- c(hospitalColumn, outcomeColumn)
-
     if (is.null(outcomeColumn)) {
         stop("Invalid outcome")
     }
 
     outcomeData <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
 
+    columnsOfInterest <- c(hospitalColumn, outcomeColumn)
     stateData <- outcomeData[outcomeData[,stateColumn] == state, columnsOfInterest]
 
     # TODO validate that the state provided is valid.
@@ -29,9 +28,9 @@ rankhospital <- function(state, outcome, num) {
     sortedData <- stateData[order(stateData[outcomeValue], stateData[hospitalName]),]
 
     if (num == "best") {
-        num = 1
+        num <- 1
     } else if (num == "worst") {
-        num = nrow(sortedData)
+        num <- nrow(sortedData)
     }
 
     if (num > nrow(sortedData)) {

@@ -5,15 +5,13 @@ rankall <- function(outcome, num = "best") {
     hospitalColumn <- 2
     outcomeColumn <- outcomeList[[outcome]]
 
-    columnsOfInterest <- c(hospitalColumn, outcomeColumn, stateColumn)
-
     ## Check that state and outcome are valid
     if (is.null(outcomeColumn)) {
         stop("Invalid outcome")
     }
 
     outcomeData <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
-    outcomeData <- outcomeData[,columnsOfInterest]
+    outcomeData <- outcomeData[, c(hospitalColumn, outcomeColumn, stateColumn)]
 
     # once we have the columns of interest, the new column positions are:
     hospitalName <- 1
@@ -40,7 +38,7 @@ rankall <- function(outcome, num = "best") {
         if (num == "best") {
             selectedNum <- 1
         } else if (num == "worst") {
-            selectedNum = nrow(sortedData)
+            selectedNum <- nrow(sortedData)
         }
 
         hospital <- NA
