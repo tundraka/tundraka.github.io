@@ -1,4 +1,4 @@
-#Renaissance Learning and Unlocking Your Potential
+#Renaissance Learning and Unlocking Your Potential - Part I
 
 ##How to become a better learner
 Two main tips for how to learn better.
@@ -167,3 +167,122 @@ of the very things that make other people say you can't do it. Take pride in
 who you are. Especially in the qualities that make you different and use them
 as a secret talisman for success. Use your natural contrariness to defy the
 always present prejudices from others about what you can accomplish.
+
+#Renaissance Learning and Unlocking Your Potential - Part II
+
+##The value of teamwork, avoiding overconfidence
+- Broad-perspective perceptual disorder of the right hemisphere. If they make
+  a mistake in their calculations in a non sensical way, there's no way for
+them to detect that error. No big picture click that says that the answer
+doesn't make any sense.
+- The right hemisphere helps us step back and to put our work into big picture
+  perspective.
+- People with damage to the right hemisphere are often unable to gain ah-ha
+  moments.
+- The right hemisphere is importan into getting in the right track and doing
+  reality checks.
+- Subtle avoidance of some of our capabilities can have a surprisingly negative
+  impact on our work.
+- When we finish an assignment and we don't go back to check our work, we are
+  acting *like a person who's refusing to use part of their brain*.
+- The right hemisphere servers a a sort of devil's advocate to question the
+  status quo and look for global inconsistencies.
+- The left  hemisphere on the other hand tends to cling to the way things were.
+- The left hemisphere interprets the work for us and will try to keep those
+  interpretations unchanged.
+- The left centered focus mode has associated with a desire to cling to
+  whatever you've done.
+- That's the problem with the focus, sometimes a bit left hemisphere leaning
+  more of analysis. It provides for an analytical and upbeat approach.
+ - Abundant research evidence that suggest that there's a potential for
+   *rigidity, dogmatism and egocentricity*.
+- Finishing an assigment and feeling that it's correct without a review, may be
+  caused by and *overly confident perspective* arising in part from the left
+hemisphere.
+ - Steping back and recheck, you're allowing for more interaction between the
+   2 hemispheres
+
+###Teamwork
+- One way to catch your blind spots is to brainstorm and work with others who
+  are also smartyl focused on the topic.
+- Your naively upbeat focused mode can still skip right over errors. Specially
+  if I'm the one who made the errors.
+- Even worse is to believe that you have everything nailed down intellectuallt
+  but you haven't.
+- Study groups can help you catch when you thinking was gone wrong.
+- Study group can work as a large scale diffuse mode outside our brain, that
+  catches what we missed or were unable to see.
+- Explaining to other helps build your understanding.
+- Study session can go wrong if the group doesn't focus or is not in the same
+  level of interest.
+
+##A test checklist
+- Testing has a way of concentrating the mind, 1 hr taking a test helps retain
+  more knowledge that 1hr of study.
+- Originally developed for engineering by Richard Felder.
+
+1. Did you make a serious effort to understand the text?
+2. Did you work with classmates on homework problems? Or check solutions with
+   others?
+3. Did you attempt to outline every homework problem solution before working
+   with classmates?
+4. Did you participate actively in homework group discussions, contributing
+   ideas and asking questions?
+5. Did you consult with the instructor when you were having trouble with
+   something?
+6. Did you understand all of your homeworks solution when they were handed in?
+7. Did you ask in class for explanations of homework problem solutions that
+   weren't clear to you?
+8. A study guide? Did you carefully go through it before the test and convince
+   yourself that you can do everything on it?
+9. Did you attempt to outline lots of problem soluton quickly without spending
+   time on the algebra in calculations?
+10. Did you go over the study guide and problems with classmates and quiz one
+    another?
+11. If there was a review session before the test, did you attend to it and ask
+    questions about anything you weren't sure about?
+12. Did you get a reasonable night sleep before the test? If you answer *no*
+    the answers to all the preceding questions may not matter.
+
+In the same way pilots or surgeons go over a checklist, going over the test
+checklist (answering yes to most of the questions) can vastly improve your
+changes of success.
+
+##The hard start - jump to easy technique
+- It's common to recommend student, when taking a test, to tackle the easy
+  questions first; the idea behind that is that once the easy ones are solved
+  you are confident in handling the difficult ones.
+ - For some people this may be counter productive.
+- Hard problems means that they'll need a lot of time, indicating that you may
+  want to start on them first thing on the test.
+- Difficult problem may also need for the creative powers of the diffuse mode.
+ - But to access the difuse mode, you need to not actively focus on what you're
+   trying to solve.
+- Easy or hard first?
+- Start with the hard ones, but quickly jump to the easy ones.
+- When the test is handed, take a quick lool to see what it involves.
+- When start working the problems start with what appears to be the hardest
+  problem.
+ - Pull yourself away within the first minute or two, if you get stuck or sense
+   that you might not be in the right track
+ - This is helpful because loads the problem in mind and seitches attention
+   away from it, allowing the diffuse mode to begin its work.
+- When you return to the more difficult problem you'll be pleased that the next
+  step seems to be more obvious.
+ - You may not be able to go all the way through to the end, but you got
+   further before you switch.
+- The *hard start-jump to easy* technique may make more efficient use of your
+  brain by allowing different parts of the brain to work simultanously on
+  different thoughts.
+- This technique guarantees that you'll have a little work on each problem. 
+- Useful technique to avoid Einstellung, getting stuck on the wrong approach
+  because you have a chance to look a the problem from different perspectives.
+- You must have the discipline to move away from the difficult problem.
+ - This may be why test takers sometimes find that the solution pops up right
+   as they walk out the door.
+ - When they gave up, their attention switch, allowing the diffuse mode the
+   traction it needed to work the solution.
+- If you haven't prepared for a test, you might as well try to get as much
+  points as you can.
+
+##Final helpful hints for tests
