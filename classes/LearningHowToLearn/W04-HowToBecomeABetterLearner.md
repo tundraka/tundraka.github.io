@@ -151,7 +151,7 @@ threatened, the more your achievements the more other people will attack or
 demean your efforts. If you fail a test you may also encounter critics that may
 say that you don't have what it takes.
 
-We're often told that empathy is universally beneficial, but **it's not. It's
+We're often told that empathy is universally beneficial, but **it's not**. It's
 important to learn to switch on an occasional cool dispassion that helps you to
 not only focus on what you're trying to learn, but also to tune people out if
 you discover their interest lie in undercutting you, such undercutting is all
@@ -260,7 +260,7 @@ changes of success.
    trying to solve.
 - Easy or hard first?
 - Start with the hard ones, but quickly jump to the easy ones.
-- When the test is handed, take a quick lool to see what it involves.
+- When the test is handed, take a quick look to see what it involves.
 - When start working the problems start with what appears to be the hardest
   problem.
  - Pull yourself away within the first minute or two, if you get stuck or sense
@@ -284,5 +284,45 @@ changes of success.
    traction it needed to work the solution.
 - If you haven't prepared for a test, you might as well try to get as much
   points as you can.
+- It's best to try this technique during your study sessions to see how well it
+  works for you.
 
 ##Final helpful hints for tests
+- Under stress the body puts out cortisol. This could cause sweaty palms,
+  racing heart, a knot in the pit of your stomach.
+- Research found, that it's how you interpret these symptoms
+- The story you tellyourself about why you're stressed makes all the difference
+ - If we shift our thinking from this test has made me afraid to this text has
+   got me excited to do my best, it can improve your performance.
+- A tip for nervous test takers is to momentarily turn your attention to your
+  breathing.
+ - Relax your stomack
+ - Put your hand on it and slowly draw a deep breath, expanding your stomach
+   area and not your chest area.
+- With this exerise, we are counteracting the fight or fliht response that
+  fuels anxiety
+- Try to do this during the weeks before the test, it'll make more easy to get
+  into this breathing pattern as opposed to doing it in the day of the test.
+  *Practice makes permanent*
+- Before the test is handed it's useful to get into this breathing patterns.
+
+**Susan Sajna-Hebert**: cover up the answers of multiple choices to try to recall
+what the right answer might be.
+**Tracey Magrann**: Face your fears. Have a plan B, the source of fear could be
+related to not getting the grade you want for the career of you choosing. Once
+a plan B exists the fear will begin to subside. Study hard up until the day of
+the test and then let it go.
+**Bob Bradshaw**: Good worry and bad worry.
+ - Good worry helps provide motivation and focus
+ - Bad worry simply wastes energy.
+
+The day before the test, have a quick look on the  material to brush up on it.
+You'll need both, the focus mode and the diffuse mode. Don't work too hard on
+the material
+
+Again, your mind can trick you into thinking that what you've done is correct.
+Whenever possible blink, shift your attention and then double check your
+answers using a big picture perspective asking yourself, does this makes sense.
+
+Normally we do test from front to end, when checking the answers go from end to
+front to have a different perspective.
