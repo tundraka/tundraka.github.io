@@ -38,9 +38,9 @@ strsplit(names(data), 'wgtp')[123]# [1] ""   "15"
 gdpResource <- 'https://d396qusza40orc.cloudfront.net/getdata/data/GDP.csv'
 gdpDest <- downloadFile(gdpResource, 'gdp.csv')
 
-gdp <- fread(gdpDest, skip=5, select=c(1, 4, 5), nrows=190)
+gdp <- fread(gdpDest, skip=5, select=c(1, 2, 4, 5), nrows=190)
 
-colNames <- c('countrycode', 'countryname', 'gdpraw')
+colNames <- c('countrycode', 'rank', 'countryname', 'gdpraw')
 setnames(gdp, names(gdp), colNames)
 
 gdp[,gdps:=str_trim(gsub(',', '', gdpraw))]
