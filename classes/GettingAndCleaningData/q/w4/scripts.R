@@ -1,26 +1,48 @@
 library(data.table)
+library(stringr)
+
+baseDataDir <- 'data'
+if (!dir.exists(baseDataDir)) {
+    dir.create(baseDataDir)
+}
+
+destPath <- function(fileName) {
+    paste0(baseDataDir, '/', fileName)
+}
+
+downloadFile <- function(resource, destination = '') {
+    if (is.null(resource) | nchar(str_trim(resource)) == 0) {
+        stop('resource not specified, nothing to download')
+    }
+
+    if (is.null(destination) | nchar(str_trim(destination)) == 0) {
+        destination <- basename(resource)
+    }
+
+    destination <- destPath(destination)
+    if (!file.exists(destination)) {
+        download.file(resource, destfile=destination, method='curl')
+    }
+
+    destination
+}
 
 # Q1
 fileResource <- 'https://d396qusza40orc.cloudfront.net/getdata/data/ss06hid.csv'
-destFile <- 'ss06hid.csv'
-if (!file.exists(destFile)) {
-    download.file(fileResource, destfile=destFile, method='curl')
-}
+destFile <- downloadFile(fileResource)
 
 data <- fread(destFile)
 strsplit(names(data), 'wgtp')[123]# [1] ""   "15"
 
 # Q2
-library(stringr)
 gdpResource <- 'https://d396qusza40orc.cloudfront.net/getdata/data/GDP.csv'
-gdpDest <- 'gdp.csv'
-if (!file.exists(gdpDest)) {
-    download.file(gdpResource, destfile=gdpDest, method='curl')
-}
+gdpDest <- downloadFile(gdpResource, 'gdp.csv')
+
+gdp <- fread(gdpDest, skip=5, select=c(1, 4, 5), nrows=190)
 
 colNames <- c('countrycode', 'countryname', 'gdpraw')
-gdp <- fread(gdpDest, skip=5, select=c(1, 4, 5), nrows=190)
 setnames(gdp, names(gdp), colNames)
+
 gdp[,gdps:=str_trim(gsub(',', '', gdpraw))]
 gdp[,gdpn:=as.numeric(gdps)]
 
@@ -31,11 +53,7 @@ grep('^United', gdp$countryname) # [1]  1  6 32
 
 # Q4
 eduResource <- 'https://d396qusza40orc.cloudfront.net/getdata/data/EDSTATS_Country.csv'
-eduDest <- 'edu_country.csv'
-
-if (!file.exists(eduDest)) {
-    download.file(eduResource, destfile=eduDest, method='curl')
-}
+eduDest <- downloadFile(eduResource, 'edu_country.csv')
 
 edu <- fread(eduDest)
 setnames(edu, names(edu), gsub(' ','', tolower(names(edu))))
