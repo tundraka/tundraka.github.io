@@ -75,3 +75,10 @@ m[grepl('High income:', incomegroup), .(meangdp=mean(rank)), .(incomegroup)]
 
 m[,qrt:=cut(gdpn, breaks=quantile(gdpn, probs=seq(0, 1, length=6)))]
 table(m$qrt, m$incomegroup)
+
+#                       Lower middle income Upper middle income
+#  (40,4.25e+03]                        15                   9
+#  (4.25e+03,1.6e+04]                    9                   8
+#  (1.6e+04,5.08e+04]                   11                   8
+#  (5.08e+04,2.63e+05]                  13                   9
+#  (2.63e+05,1.62e+07]                   5                  11
