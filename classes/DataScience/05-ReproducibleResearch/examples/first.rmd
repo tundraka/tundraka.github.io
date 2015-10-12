@@ -1,0 +1,8 @@
+#This is my first RMD file.
+I'm surprised the [VIM][1] already has the syntax for it!.
+
+```{r}
+library(data.table)
+```
+
+[1]: http://www.vim.org/
