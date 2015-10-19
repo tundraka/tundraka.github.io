@@ -1,0 +1,179 @@
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
+
+```{r loadlibraries, echo=F}
+library(data.table)
+library(ggplot2)
+library(xtable)
+```
+
+##Reproducible Research: Peer Assessment 1. Activity monitor analysis
+
+## Loading and preprocessing the data
+The data to work with is included in this github project, the first step would
+be to unzip the data and place it under the `data/` directory  and load it into
+R. **Note**: the `data` directory won't be commited to github.
+
+```{r loaddata}
+unzip('activity.zip', exdir='data/')
+data <- fread('data/activity.csv')
+data$date <- as.Date(data$date, format='%Y-%m-%d')
+```
+
+## What is mean total number of steps taken per day?
+We add the total number of steps per day and group them by the date.
+A histogram is created to illustrate the total number of steps.
+
+```{r stepsbyday}
+totalStepsByDay <- data[,.(total=sum(steps)), .(date)]
+ggplot(totalStepsByDay, aes(x=date, weight=total)) +
+    geom_histogram(binwidth=1) +
+    labs(title='Total steps by day', y='Steps')
+```
+
+We will also report the mean and median steps taken by day. We first ignore the
+entries with `NA` steps.
+
+```{r meanstepsbyday}
+stepsByDay <- data[!is.na(steps),
+                   .(
+                     meanDay=mean(steps, na.rm=T),
+                     medianDay=median(steps, na.rm=T)
+                     ), .(date)]
+```
+
+Notice that some dates are missing, this is because there's no data in those days.
+
+```{r tablemeanstepsbyday, results='asis', echo=F}
+stepsByDay$date <- as.character(stepsByDay$date)
+tableStepsByDay <- xtable(stepsByDay)
+print(tableStepsByDay, type='html', include.rownames=F)
+```
+
+## What is the average daily activity pattern?
+We want to know on average how many steps are given on a time period. Remember,
+the data set contains a variable called `interval` which is the 5 minute period
+where the read was taken, for example, 0 represents 0:00, 1455 represents
+14:55, and so on.
+
+In this case we calcuated the average steps grouped by the interval across the
+entire data set. The plot displays the mean steps for interval 1000; to calculate
+this, all existing steps in the 1000 `interval` were averaged.
+
+```{r intervalmean}
+meanByInterval <- data[,.(avgSteps=mean(steps, na.rm=T)), .(interval)]
+ggplot(meanByInterval, aes(interval, avgSteps)) +
+    geom_line() +
+    labs(title='Average steps by interval', y='Steps')
+```
+
+```{r maxinterval, echo=F}
+maxStepsInterval <- meanByInterval[which.max(avgSteps), .(interval, avgSteps)]
+interval <- maxStepsInterval$interval
+avgSteps <- maxStepsInterval$avgSteps
+```
+
+We can see that the interval with the max average steps is the `r interval`
+interval with an average of `r avgSteps`.
+
+## Imputing missing values
+
+```{r totalNas, echo=F}
+totalNas <- data[is.na(steps), .N]
+```
+
+This data set contains a total of `r totalNas` `NA` values in the steps variables.
+In order to fix this we will replace those `NA`s with the median of the day. In
+the days where the median cannot be calculated (there are no reading for that
+specific day) we will set the steps to 0.
+
+Going from `NA`s to 0 is probably not the optimal. One improvement for this would be
+to calculate the mean of the observations of other days with observation,
+I'd assume that a similar routine is followed for example in every Monday.
+
+The steps to replace `NA`s with the media is as follow.
+
+1. Replicate our data set.
+2. Detect the days that have `NA`s in it.
+3. Apply the function `replaceNAs` which will do the following
+   1. It will get the median using the mean/median set displayed above.
+   2. If the row doesn't exist we default to a median 0
+   3. The selected median is applied to all `NA`s steps.
+
+```{r replacingnas}
+replaceNAs <- function(dayDate) {
+    dayMedian <- 0
+    steps <- stepsByDay[date==dayDate]
+
+    # If we don't have a row, then  day median is NA (there are no steps recorded
+    # in the whole day, we set the rowMedian to 0
+    if (nrow(steps) > 0) {
+        dayMedian <- steps$medianDay
+    }
+
+    imputed[date==dayDate & is.na(steps), steps:=dayMedian]
+}
+
+# We will create a copy of the data
+imputed <- data.table(data)
+
+# We detect the dates with NAs in it
+nasDates <- imputed[is.na(steps), unique(date)]
+
+a <- lapply(nasDates, replaceNAs)
+```
+
+To see the histogram of this values we add the steps and display.
+
+```{r plotimputed}
+imputedTotals <- imputed[,.(total=sum(steps)), .(date)]
+ggplot(imputedTotals, aes(x=date, weight=total)) +
+    geom_histogram(binwidth=1) +
+    labs(title='Total steps by day', y='Steps')
+
+```
+
+What's the difference between this histogram and the previous without the `NA`s
+replace? We will take both histograms data and calculate the difference. The
+table below shows the results.
+
+```{r stepsdifference}
+totalsDifference <- merge(totalStepsByDay, imputedTotals, by='date')
+fixedDiff <- totalsDifference[,
+              .(date,
+                diff=abs(ifelse(is.na(total.x), 0, total.x) - total.y)
+                )]
+```
+
+Basically, replacing `NA`s with the median, wouldn't change the results that
+we've seen so far.
+
+```{r tablediff, results='asis', echo=F}
+fixedDiff$date <- as.character(fixedDiff$date)
+tableDiff <- xtable(fixedDiff)
+print(tableDiff, type='html', include.rownames=F)
+```
+
+## Are there differences in activity patterns between weekdays and weekends?
+First we will classify weekday and weekends, `as.POSIXlt(date)$wday` will
+return a number 1=Monday, 2=Tuesday and so on. Any day bigger than 5=Friday
+will be considered weekend.
+
+```{r weekdays}
+imputed[,weekday:=as.factor(ifelse(as.POSIXlt(date)$wday > 5, 'weekend', 'weekday'))]
+```
+
+Once we have the days classified as weekend/weekday we will add the total steps
+by interval.
+
+```{r weekdaysplot}
+weekDay <- imputed[,.(total=mean(steps)), .(interval, weekday)]
+ggplot(weekDay, aes(interval, total)) +
+    geom_line() + 
+    facet_grid(weekday ~ .) +
+    labs(title='Total steps by interval on day type', y='Total steps')
+```
