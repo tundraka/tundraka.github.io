@@ -1,3 +1,4 @@
+```{r}
 library(data.table)
 
 destFile <- 'stormdata.csv.bz2'
@@ -9,3 +10,6 @@ if (!file.exists(destFile)) {
 
 data <- as.data.table(read.csv(destFile))
 nrow(data)
+
+data[,.(totfat=sum(FATALITIES), totinj=sum(INJURIES)), .(EVTYPE)][order(-totfat, -totinj)][1:30]
+```
