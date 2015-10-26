@@ -10,7 +10,6 @@ if (!file.exists(destFile)) {
 
 data <- as.data.table(read.csv(destFile))
 setnames(data, names(data), tolower(names(data)))
-nrow(data)
 
 heat <- c('EXCESSIVE HEAT', 'HEAT', 'HEAT WAVE', 'EXTREME HEAT')
 tornado <- c('TORNADO')
@@ -18,7 +17,6 @@ beach <- c('RIP CURRENT', 'RIP CURRENTS', 'HIGH SURF')
 rain <- c('FLASH FLOOD', 'FLOOD', 'HEAVY RAIN', 'TROPICAL STORM')
 storm <- c('TSTM WIND', 'HIGH WIND', 'THUNDERSTORM WIND', 'STRONG WIND',
            'HURRICANE/TYPHOON', 'THUNDERSTORM WINDS')
-
 
 renderMap <- function(eventData) {
     map(database='world', ylim=c(45,90), xlim=c(-160,-50), col='grey80',
@@ -37,6 +35,9 @@ prepareData <- function(events, factor) {
 }
 
 sizeFactor <- 0.0015
+
+summaryAffected <- data[,.(totf=sum(fatalities), toti=sum(injuries)),
+                        .(evtype)][order(-totf, -toti)][1:100]
 
 renderMap(prepareData(tornado, 0.0015))
 renderMap(prepareData(heat, 0.0015))
