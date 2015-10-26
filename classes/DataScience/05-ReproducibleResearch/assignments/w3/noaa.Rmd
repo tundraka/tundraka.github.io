@@ -9,28 +9,32 @@ if (!file.exists(destFile)) {
 }
 
 data <- as.data.table(read.csv(destFile))
+setnames(data, names(data), tolower(names(data)))
 nrow(data)
 
 heat <- c('EXCESSIVE HEAT', 'HEAT', 'HEAT WAVE', 'EXTREME HEAT')
 beach <- c('RIP CURRENT', 'RIP CURRENTS', 'HIGH SURF')
 rain <- c('FLASH FLOOD', 'FLOOD', 'HEAVY RAIN', 'TROPICAL STORM')
-storm <- c('TSTM WIND', 'HIGH WIND', 'THUNDERSTORM WIND', 'STRONG WIND', 'HURRICANE/TYPHOON', 'THUNDERSTORM WINDS')
+storm <- c('TSTM WIND', 'HIGH WIND', 'THUNDERSTORM WIND', 'STRONG WIND',
+           'HURRICANE/TYPHOON', 'THUNDERSTORM WINDS')
 
-tornadoData <- data[EVTYPE=='TORNADO',
-                    .(FATALITIES, INJURIES, LATITUDE, LONGITUDE)
-                    ][order(-FATALITIES, -INJURIES)
-                    ][1:100,.(lat=LATITUDE/100, lon=-1*LONGITUDE/100,
-                              siz=0.01*FATALITIES)]
-heatData <- data[EVTYPE %in% heat,
-                 .(FATALITIES, INJURIES, LATITUDE, LONGITUDE)
-                 ][order(-FATALITIES, -INJURIES)
-                 ][1:100,.(lat=LATITUDE/100, lon=-1*LONGITUDE/100, FATALITIES)]
-rainData <- data[EVTYPE %in% rain,
-                 .(FATALITIES, INJURIES, LATITUDE, LONGITUDE, COUNTYNAME, STATE)
-                 ][order(-FATALITIES, -INJURIES)
-                 ][1:100,.(lat=LATITUDE/100, lon=-1*LONGITUDE/100, FATALITIES,
-                           COUNTYNAME, STATE)]
-
+sizeFactor <- 0.01
+tornadoData <- data[evtype=='TORNADO',
+                    .(fatalities, injuries, lat=latitude/100, lon=longitude/100,
+                      siz=sizeFactor*fatalities)
+                    ][order(-fatalities, -injuries)
+                    ][1:100,.(lat, lon, siz)]
+heatData <- data[evtype %in% heat,
+                 .(fatalities, injuries, county=countyname, state,
+                   lat=latitude/100, lon=-1*longitude/100,
+                   siz=sizeFactor*fatalities)
+                 ][order(-fatalities, -injuries)
+                 ][1:100,.(lat, lon, siz, county, state)]
+rainData <- data[evtype %in% rain,
+                 .(fatalities, injuries, lat=latitude/100, lon=-1*longitude/100,
+                   siz=sizeFactor*fatalities, county=countyname, state)
+                 ][order(-fatalities, -injuries)
+                 ][1:100,.(lat, lon, siz, county, state)]
 
 
 map(database= "world", ylim=c(45,90), xlim=c(-160,-50), col="grey80",
