@@ -11,5 +11,31 @@ if (!file.exists(destFile)) {
 data <- as.data.table(read.csv(destFile))
 nrow(data)
 
-data[,.(totfat=sum(FATALITIES), totinj=sum(INJURIES)), .(EVTYPE)][order(-totfat, -totinj)][1:30]
+heat <- c('EXCESSIVE HEAT', 'HEAT', 'HEAT WAVE', 'EXTREME HEAT')
+beach <- c('RIP CURRENT', 'RIP CURRENTS', 'HIGH SURF')
+rain <- c('FLASH FLOOD', 'FLOOD', 'HEAVY RAIN', 'TROPICAL STORM')
+storm <- c('TSTM WIND', 'HIGH WIND', 'THUNDERSTORM WIND', 'STRONG WIND', 'HURRICANE/TYPHOON', 'THUNDERSTORM WINDS')
+
+tornadoData <- data[EVTYPE=='TORNADO',
+                    .(FATALITIES, INJURIES, LATITUDE, LONGITUDE)
+                    ][order(-FATALITIES, -INJURIES)
+                    ][1:100,.(lat=LATITUDE/100, lon=-1*LONGITUDE/100,
+                              siz=0.01*FATALITIES)]
+heatData <- data[EVTYPE %in% heat,
+                 .(FATALITIES, INJURIES, LATITUDE, LONGITUDE)
+                 ][order(-FATALITIES, -INJURIES)
+                 ][1:100,.(lat=LATITUDE/100, lon=-1*LONGITUDE/100, FATALITIES)]
+rainData <- data[EVTYPE %in% rain,
+                 .(FATALITIES, INJURIES, LATITUDE, LONGITUDE, COUNTYNAME, STATE)
+                 ][order(-FATALITIES, -INJURIES)
+                 ][1:100,.(lat=LATITUDE/100, lon=-1*LONGITUDE/100, FATALITIES,
+                           COUNTYNAME, STATE)]
+
+
+
+map(database= "world", ylim=c(45,90), xlim=c(-160,-50), col="grey80",
+    fill=TRUE, projection="gilbert", orientation= c(90,0,225))
+tornadoCoord <- mapproject(tornadoData$lon, tornadoData$lat, proj="gilbert",
+                           orientation=c(90, 0, 225))
+points(coord, pch=20, cex=tornadoData$siz, col="red")
 ```
