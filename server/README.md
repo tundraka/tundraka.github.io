@@ -1,5 +1,11 @@
 # Notes
 
+### node
+Used [nvm](2). Instruction in the README.
+
+### sshd
+- Restarting: `sudo service ssh restart`
+
 ### nginx
 - Edit configuration: `sudo vi /etc/nginx/sites-enabled`
 - Restart nginx: `sudo service nginx reload`
@@ -17,3 +23,4 @@
 - Flush all rules: `sudo service iptables-persistent flush`
 
 [1]: https://www.digitalocean.com/community/tutorials/how-to-implement-a-basic-firewall-template-with-iptables-on-ubuntu-14-04
+[2]: https://github.com/creationix/nvm
